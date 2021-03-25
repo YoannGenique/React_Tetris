@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledStartButton = styled.button`
+const StyledReturnButton = styled.a`
   box-sizing: border-box;
-  margin: 0 0 40px 0;
+  margin: 0px 0 20px 0;
   padding: 20px;
   min-height: 30px;
   width: 100%;
@@ -15,10 +15,11 @@ const StyledStartButton = styled.button`
   font-size: 1rem;
   outline: none;
   cursor: pointer;
+  text-decoration: none;
 `;
 
-const StartButton = ({ callback }) => (
-  <StyledStartButton onClick={callback}>Start Game</StyledStartButton>
+const ReturnButton = ({ callback }) => (
+  <StyledReturnButton href="../portfolio-details-projet-4.html">Return</StyledReturnButton>
 );
 
-export default StartButton;
+export default ReturnButton;
